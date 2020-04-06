@@ -13,7 +13,7 @@ public class Result3 {
 		System.out.println(result[1]);
 	}
 
-    // 方法二：一遍哈希表
+    // 方法三：一遍哈希表 时间复杂度：O(n)
 	public static int[] twoSum(int[] nums, int target) {
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 		for (int i = 0; i < nums.length; i++) {

@@ -20,7 +20,7 @@ public class Result1 {
         System.out.println(result[1]);
     }
 
-    // 方法一：暴力法
+    // 方法一：暴力法 时间复杂度：O(n^2)
     public static int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
