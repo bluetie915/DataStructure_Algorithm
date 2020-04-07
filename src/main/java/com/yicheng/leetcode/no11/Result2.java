@@ -1,5 +1,6 @@
 package com.yicheng.leetcode.no11;
 
+// 时间复杂度 O(n)
 public class Result2 {
 
     public static void main(String[] args) {
