@@ -19,6 +19,11 @@ import java.util.*;
 // 时间复杂度：O(n)O(n)
 public class Result1 {
 
+    public static void main(String[] args) {
+        boolean flag = isValid("(((){})[]())");
+        System.out.println(flag);
+    }
+
     static Map<Character, Character> map;
 
     static {
@@ -43,11 +48,6 @@ public class Result1 {
             }
         }
         return stack.isEmpty();
-    }
-
-    public static void main(String[] args) {
-        boolean flag = isValid("(((){})[]())");
-        System.out.println(flag);
     }
 
 }
