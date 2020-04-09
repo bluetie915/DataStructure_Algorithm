@@ -1,4 +1,4 @@
-package com.yicheng.test;
+package com.yicheng.test.stack;
 
 public class Stack {
 
