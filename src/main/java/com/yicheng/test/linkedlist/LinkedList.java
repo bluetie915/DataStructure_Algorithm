@@ -2,9 +2,9 @@ package com.yicheng.test.linkedlist;
 
 public class LinkedList<E> {
 
-    private Node root = new Node(); // 空节点
-    private Node next; // 下一个节点
-    private Node last; // 始终表示最后一个节点
+    private Node<E> root = new Node<E>(); // 空节点
+    private Node<E> next; // 下一个节点
+    private Node<E> last; // 始终表示最后一个节点
     private int size;
 
     public int size() {
@@ -13,7 +13,7 @@ public class LinkedList<E> {
 
     // add一个节点
     public void add(E e) {
-        next = new Node(e);
+        next = new Node<E>(e);
         if (size == 0) {
             root.setNext(next);
             last = next;
@@ -26,9 +26,9 @@ public class LinkedList<E> {
     }
 
     // get一个节点
-    public Object get(int index) {
+    public E get(int index) {
         checkIndex(index);
-        Node node =  root.getNext();
+        Node<E> node =  root.getNext();
         for (int i = 0; i < index; i++) {
             node = node.getNext();
         }
@@ -38,7 +38,7 @@ public class LinkedList<E> {
     // set节点元素
     public void set(int index, E e) {
         checkIndex(index);
-        Node node = root.getNext();
+        Node<E> node = root.getNext();
         for (int i = 0; i < index; i++) {
             node = node.getNext();
         }
@@ -48,14 +48,14 @@ public class LinkedList<E> {
     // remove节点元素
     public void remove(int index) {
         checkIndex(index);
-        Node node = root.getNext();
+        Node<E> node = root.getNext();
         if (index != 0) {
             for (int i = 0; i < index; i++) {
                 node = node.getNext();
             }
-            Node preNode = node.getPrevious();
+            Node<E> preNode = node.getPrevious();
             if (index != size - 1) {
-                Node nextNode = root.getNext();
+                Node<E> nextNode = root.getNext();
                 preNode.setNext(nextNode);
             } else {
                 preNode.setNext(null);
@@ -63,7 +63,7 @@ public class LinkedList<E> {
             node.setData(null);
             node.setNext(null);
         } else {
-            Node nextNode = node.getNext();
+            Node<E> nextNode = node.getNext();
             root.setNext(nextNode);
             node.setData(null);
             node.setNext(null);
@@ -72,13 +72,38 @@ public class LinkedList<E> {
     }
 
     // 插入节点的方法
-//    public void insert(int index; E e) {
-//
-//    }
+    public void insert(int index, E e) {
+        checkIndex(index);
+        Node<E> node = root.getNext();
+        for (int i = 0; i < index; i++) {
+            node = node.getNext();
+        }
+        Node<E> newNode = new Node<E>(e);
+        if (index == 0) {
+            root.setNext(newNode);
+            newNode.setNext(node);
+        } else {
+            Node<E> preNode = node.getPrevious();
+            preNode.setNext(newNode);
+            newNode.setNext(node);
+        }
+        size++;
+    }
+
+    // 重写toString方法
+    public String toString(LinkedList list) {
+        if (list.size() == 0)
+            return "[]";
+        StringBuffer result = new StringBuffer("[");
+        for (int i = 0; i < list.size(); i++) {
+            result.append(list.get(i) + ",");
+        }
+        return result.deleteCharAt(result.length() - 1).append("]").toString();
+    }
 
     // 检查下标是否合法
     private void checkIndex(int index) {
-        if (index < 0 || index > size) {
+        if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException(outofBoundsMsg(index));
         }
     }

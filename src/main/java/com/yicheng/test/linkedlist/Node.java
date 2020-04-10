@@ -1,8 +1,8 @@
 package com.yicheng.test.linkedlist;
 
-public class Node {
+public class Node<E> {
 
-    private Object data;
+    private E data;
     private Node next;
     private Node previous;
 
@@ -10,15 +10,15 @@ public class Node {
 
     }
 
-    public Node(Object data) {
+    public Node(E data) {
         this.data = data;
     }
 
-    public Object getData() {
+    public E getData() {
         return data;
     }
 
-    public void setData(Object data) {
+    public void setData(E data) {
         this.data = data;
     }
 
