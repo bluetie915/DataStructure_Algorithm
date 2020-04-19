@@ -12,7 +12,6 @@ public class Test {
 //        stack.pollFirst();
 //        stack.pollLast();
 //        stack.peekFirst();
-
         for (int i = 0; i < 1; i++) {
             System.out.println(1);
         }
