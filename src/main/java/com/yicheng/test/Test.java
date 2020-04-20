@@ -19,5 +19,6 @@ public class Test {
         String s = "zhang";
         s.hashCode();
     }
+
 }
 
