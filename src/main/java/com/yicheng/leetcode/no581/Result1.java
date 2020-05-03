@@ -7,4 +7,6 @@ package com.yicheng.leetcode.no581;
  */
 
 public class Result1 {
+	
+	
 }
