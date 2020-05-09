@@ -14,4 +14,5 @@ package com.yicheng.leetcode.no33;
  */
 
 public class Result1 {
+
 }
