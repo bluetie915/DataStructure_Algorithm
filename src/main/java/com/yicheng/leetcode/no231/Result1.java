@@ -9,6 +9,7 @@ public class Result1 {
         Result1 result1 = new Result1();
         boolean result = result1.isPowerOfTwo(8);
         System.out.println(result);
+
     }
 
     public boolean isPowerOfTwo(int n) {
