@@ -8,8 +8,9 @@ public class Maopao {
 
     public static void main(String[] args) {
         int[] arr = new int[]{5, 9, 6, 1, 22, 98, 65, 3, 10, 85, 44};
-        List<Integer> result = Arrays.stream(bubbleSort(arr)).boxed().collect(Collectors.toList());
-        System.out.println(result);
+//        List<Integer> result = Arrays.stream(bubbleSort(arr)).boxed().collect(Collectors.toList());
+//        System.out.println(result);
+        System.out.println(Arrays.toString(bubbleSort(arr)));
     }
 
     static int[] bubbleSort(int[] arr) {

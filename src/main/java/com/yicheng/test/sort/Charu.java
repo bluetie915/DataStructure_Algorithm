@@ -13,13 +13,16 @@ public class Charu {
     }
 
     static int[] insertionSort(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j > i; j--) {
-                if (arr[j - 1] > arr[j]) {
-
-                }
+        int preIndex, current;
+        for (int i = 1; i < arr.length; i++) {
+            preIndex = i - 1;
+            current = arr[i];
+            while (preIndex >= 0 && arr[preIndex] > current) {
+                arr[preIndex + 1] = arr[preIndex];
+                preIndex--;
             }
+            arr[preIndex + 1] = current;
         }
-        return null;
+        return arr;
     }
 }
