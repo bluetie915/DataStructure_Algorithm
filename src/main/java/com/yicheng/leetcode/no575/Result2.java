@@ -16,6 +16,7 @@ public class Result2 {
         for (int candy : candies) {
             set.add(candy);
         }
+
         return Math.min(set.size(), candies.length / 2);
     }
 }
