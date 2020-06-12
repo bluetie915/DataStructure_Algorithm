@@ -8,13 +8,13 @@ public class Charu {
 
     public static void main(String[] args) {
         int[] arr = new int[]{5, 9, 6, 1, 22, 98, 65, 3, 10, 85, 44};
-        List<Integer> result = Arrays.stream(arr).boxed().collect(Collectors.toList());
-        System.out.println(result);
+        System.out.println(Arrays.toString(insertionSort(arr)));
     }
 
     static int[] insertionSort(int[] arr) {
+        int length = arr.length;
         int preIndex, current;
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 1; i < length; i++) {
             preIndex = i - 1;
             current = arr[i];
             while (preIndex >= 0 && arr[preIndex] > current) {
