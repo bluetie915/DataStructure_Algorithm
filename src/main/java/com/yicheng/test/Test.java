@@ -7,6 +7,7 @@ public class Test {
     List list = new ArrayList();
 
     public static void main(String[] args) {
+
 //        Deque<Integer> stack = new ArrayDeque<>();
 //        stack.poll();
 //        stack.pollFirst();
