@@ -16,10 +16,10 @@ public class Test {
         for (int i = 0; i < 1; i++) {
             System.out.println(1);
         }
-
         String s = "zhang";
         s.hashCode();
+        Map<Integer, Integer> map = new Hashtable<>();
+        List<Integer> vector = new Vector<>();
     }
-
 }
 
