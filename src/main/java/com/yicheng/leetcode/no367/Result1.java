@@ -13,6 +13,7 @@ public class Result1 {
         boolean result = result1.isPerfectSquare(5);
         System.out.println(result);
     }
+
     public boolean isPerfectSquare(int num) {
         long left = 0;
         long right = num;
