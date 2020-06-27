@@ -28,7 +28,7 @@ public class LinkedList<E> {
     // get一个节点
     public E get(int index) {
         checkIndex(index);
-        Node<E> node =  root.getNext();
+        Node<E> node = root.getNext();
         for (int i = 0; i < index; i++) {
             node = node.getNext();
         }
