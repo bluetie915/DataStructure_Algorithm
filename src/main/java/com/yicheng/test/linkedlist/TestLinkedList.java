@@ -1,6 +1,7 @@
 package com.yicheng.test.linkedlist;
 
 public class TestLinkedList {
+
     public static void main(String[] args) {
         LinkedList<Integer> list = new LinkedList<>();
         System.out.println(list.toString(list));
