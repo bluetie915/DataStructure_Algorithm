@@ -3,7 +3,7 @@ package com.yicheng.leetcode.no1;
 import java.util.HashMap;
 import java.util.Map;
 
-// 方法二：两遍哈希表 时间复杂度：O(n)
+// 方法二：两遍哈希表  时间复杂度：O(n)
 public class Result2 {
 
     public static void main(String[] args) {
