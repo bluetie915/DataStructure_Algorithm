@@ -3,7 +3,6 @@ package com.yicheng.test.sort;
 import java.util.Arrays;
 
 public class Charu {
-
     public static void main(String[] args) {
         int[] arr = new int[]{5, 9, 6, 1, 22, 98, 65, 3, 10, 85, 44};
         System.out.println(Arrays.toString(insertionSort(arr)));
