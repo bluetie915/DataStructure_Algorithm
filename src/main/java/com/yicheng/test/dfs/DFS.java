@@ -6,6 +6,7 @@ import java.util.List;
 public class DFS {
 
     public static void main(String[] args) {
+
         DFS result1 = new DFS();
         TreeNode node = new TreeNode(3);
         node.left = new TreeNode(5);
