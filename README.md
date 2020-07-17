@@ -1,4 +1,4 @@
 # DataStructure_Algorithm
 我的数据结构和算法学习
 
-其中包括自己对LeetCode上题目的多种钥匙思路
+其中包括自己对LeetCode上题目的多种解题思路
