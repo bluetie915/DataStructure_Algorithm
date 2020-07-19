@@ -1,8 +1,8 @@
-package com.yicheng.test;
+package com.yicheng.algo.test;
 
 import java.util.*;
 
-public class Test {
+public class Test1 {
 
     List list = new ArrayList();
 

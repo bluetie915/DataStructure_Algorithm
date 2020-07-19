@@ -1,4 +1,4 @@
-package com.yicheng.test.queue;
+package com.yicheng.algo.queue;
 
 public class Queue {
 

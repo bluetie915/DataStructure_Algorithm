@@ -1,4 +1,4 @@
-package com.yicheng.test.dfs;
+package com.yicheng.algo.dfs;
 
 import java.util.ArrayList;
 import java.util.List;

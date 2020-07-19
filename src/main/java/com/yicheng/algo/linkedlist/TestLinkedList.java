@@ -1,4 +1,4 @@
-package com.yicheng.test.linkedlist;
+package com.yicheng.algo.linkedlist;
 
 public class TestLinkedList {
 

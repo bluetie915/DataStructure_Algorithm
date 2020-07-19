@@ -1,4 +1,4 @@
-package com.yicheng.test;
+package com.yicheng.algo.test;
 
 public class Test2 {
 

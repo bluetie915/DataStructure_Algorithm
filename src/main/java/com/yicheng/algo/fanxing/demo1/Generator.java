@@ -1,14 +1,11 @@
-package com.yicheng.test.fanxing.demo1;
+package com.yicheng.algo.fanxing.demo1;
 
-/**
- *
- * @param <T>
- */
-public class Generic<T> {
+public class Generator<T> {
 
+    // T是由外部使用类的时候来指定
     private T key;
 
-    public Generic(T key) {
+    public Generator(T key) {
         this.key = key;
     }
 
@@ -22,7 +19,7 @@ public class Generic<T> {
 
     @Override
     public String toString() {
-        return "Generic{" +
+        return "Generator{" +
                 "key=" + key +
                 '}';
     }

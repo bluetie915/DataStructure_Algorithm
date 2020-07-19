@@ -1,4 +1,4 @@
-package com.yicheng.test.sort;
+package com.yicheng.algo.sort;
 
 import java.util.Arrays;
 
