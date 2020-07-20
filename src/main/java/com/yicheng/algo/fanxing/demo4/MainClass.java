@@ -12,5 +12,6 @@ public class MainClass {
         String key1 = pair.getKey();
         Integer value = pair.getValue();
         System.out.println(key1 + "=" + value);
+
     }
 }
