@@ -5,6 +5,7 @@ import java.util.Random;
 
 /**
  * 抽奖器
+ *
  * @param <T>
  */
 public class ProductGetter<T> {
@@ -29,11 +30,41 @@ public class ProductGetter<T> {
 
     /**
      * 定义泛型方法
+     *
      * @param list 参数
-     * @param <E> 泛型标识，具体类型，由调用方法的时候来指定
+     * @param <E>  泛型标识，具体类型，由调用方法的时候来指定
      * @return
      */
     public <E> E getProduct(ArrayList<E> list) {
         return list.get(random.nextInt(list.size()));
+    }
+
+    /**
+     * 静态的泛型方法，采用多个泛型类型
+     *
+     * @param t
+     * @param e
+     * @param k
+     * @param <T>
+     * @param <E>
+     * @param <K>
+     */
+    public static <T, E, K> void printType(T t, E e, K k) {
+        System.out.println(t + "\t" + t.getClass().getSimpleName());
+        System.out.println(e + "\t" + e.getClass().getSimpleName());
+        System.out.println(k + "\t" + k.getClass().getSimpleName());
+    }
+
+    /**
+     * 泛型可变参数的定义
+     *
+     * @param e
+     * @param <E>
+     */
+    public static <E> void print(E... e) {
+        for (int i = 0; i < e.length; i++) {
+            System.out.print(e[i] + "\t");
+        }
+        System.out.println();
     }
 }
