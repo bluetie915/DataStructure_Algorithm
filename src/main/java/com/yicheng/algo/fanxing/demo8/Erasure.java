@@ -1,6 +1,8 @@
 package com.yicheng.algo.fanxing.demo8;
 
-public class Erasure<T> {
+import java.util.List;
+
+public class Erasure<T extends Number> {
 
     private T key;
 
@@ -12,5 +14,13 @@ public class Erasure<T> {
         this.key = key;
     }
 
-
+    /**
+     * 泛型方法
+     * @param t
+     * @param <T>
+     * @return
+     */
+    public <T extends List> T show(T t) {
+        return t;
+    }
 }
