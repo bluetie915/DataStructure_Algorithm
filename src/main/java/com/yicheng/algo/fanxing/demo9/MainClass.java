@@ -17,8 +17,10 @@ public class MainClass {
 
 //        listArr[0] = intList;
         listArr[0] = strList;
-
         String s = listArr[0].get(0);
         System.out.println(s);
+
+        System.out.println("--------------------");
+        Fruit<String> fruit = new Fruit<>(String.class, 3);
     }
 }
