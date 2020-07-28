@@ -23,7 +23,6 @@ public class Result1 {
     }
 
     public char nextGreatestLetter(char[] letters, char target) {
-
         return 'c';
     }
 }
