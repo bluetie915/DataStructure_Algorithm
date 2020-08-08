@@ -8,6 +8,7 @@ public class MainClass {
         Constructor<Person> constructor = personClass.getConstructor();
         Person person = constructor.newInstance();
 
+
         Class personClass1 = Person.class;
         Constructor constructor1 = personClass1.getConstructor();
         Object o = constructor1.newInstance();
