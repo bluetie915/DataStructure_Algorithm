@@ -1,4 +1,4 @@
-package com.yicheng.leetcode.no1;
+package com.yicheng.leetcode.array.no1;
 
 import java.util.HashMap;
 import java.util.Map;
