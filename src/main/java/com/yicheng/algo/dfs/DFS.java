@@ -18,7 +18,6 @@ public class DFS {
         List<Integer> result = result1.levelOrder(node);
         System.out.println(result);
     }
-
     List<Integer> list = new ArrayList<>();
 
     public List<Integer> levelOrder(TreeNode root) {

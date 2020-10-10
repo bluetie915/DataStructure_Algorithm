@@ -12,7 +12,6 @@ public class Result1 {
     public static void main(String[] args) {
 
     }
-
     public int sumOfLeftLeaves(TreeNode root) {
         if (root == null)
             return  0;
