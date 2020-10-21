@@ -10,15 +10,14 @@ import com.yicheng.leetcode.tree.node.TreeNode;
  */
 public class Result1 {
     public static void main(String[] args) {
-
+        int[] input = {3, 9, 20, 0, 0, 15, 7};
     }
+
     public int sumOfLeftLeaves(TreeNode root) {
         if (root == null)
-            return  0;
-        if (root.left != null && root.right != null)
-            return root.left.val + sumOfLeftLeaves(root.right);
-        if (root.left == null)
             return 0;
-        return root.left.val;
+        if (root.left != null && root.left.left == null && root.left.right == null)
+            return root.left.val;
+        return sumOfLeftLeaves(root.left) + sumOfLeftLeaves(root.right);
     }
 }
