@@ -1,6 +1,6 @@
 package com.yicheng.leetcode.tree.no145;
 
-import com.yicheng.leetcode.tree.node.TreeNode;
+import com.yicheng.node.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

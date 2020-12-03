@@ -1,4 +1,4 @@
-package com.yicheng.leetcode.tree.node;
+package com.yicheng.node;
 
 /**
  * @author 张艺成

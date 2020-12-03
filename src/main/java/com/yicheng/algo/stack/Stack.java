@@ -1,30 +1,31 @@
 package com.yicheng.algo.stack;
 
-public class Stack {
+public class Stack<T> {
 
-    int[] stack;
+    T[] stack;
     int topIndex = -1;
 
     public Stack() {
-        stack = new int[10];
+        stack = (T[])new Object[10];
     }
 
     public Stack(int length) {
-        stack = new int[length];
+        stack = (T[])new Object[10];
     }
 
-    void push(int data) {
+    void push(T data) {
         topIndex++;
         stack[topIndex] = data;
     }
 
-    int pop() {
-        int result = stack[topIndex];
+    T pop() {
+        T result = stack[topIndex];
         topIndex--;
         return result;
     }
 
-    int peek() {
+
+    T peek() {
         return stack[topIndex];
     }
 

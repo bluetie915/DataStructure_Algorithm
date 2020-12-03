@@ -1,6 +1,6 @@
 package com.yicheng.leetcode.tree.no101;
 
-import com.yicheng.leetcode.tree.node.TreeNode;
+import com.yicheng.node.TreeNode;
 
 /**
  * @author 张艺成

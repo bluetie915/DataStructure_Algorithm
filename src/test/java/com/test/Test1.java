@@ -30,7 +30,6 @@ public class Test1 {
         return i;
     }
 
-
     // 初始化的数组都是0
     @Test
     public void test2() {
@@ -48,7 +47,5 @@ public class Test1 {
 //        list2.add(3);
         System.out.println(list1.equals(list2));
     }
-
-
 
 }

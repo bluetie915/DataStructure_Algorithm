@@ -1,6 +1,6 @@
 package com.yicheng.leetcode.tree.no100;
 
-import com.yicheng.leetcode.tree.node.TreeNode;
+import com.yicheng.node.TreeNode;
 
 /**
  * 给定两个二叉树，编写一个函数来检验它们是否相同。

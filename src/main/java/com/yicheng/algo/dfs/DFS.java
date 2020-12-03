@@ -1,5 +1,7 @@
 package com.yicheng.algo.dfs;
 
+import com.yicheng.node.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;

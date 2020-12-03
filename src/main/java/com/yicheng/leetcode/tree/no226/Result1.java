@@ -1,10 +1,9 @@
 package com.yicheng.leetcode.tree.no226;
 
-import com.yicheng.leetcode.tree.node.TreeNode;
+import com.yicheng.node.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 /**
  * 翻转一棵二叉树。
